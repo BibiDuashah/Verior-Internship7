@@ -1,0 +1,121 @@
+:root {
+  --lemon: #fffacd;
+  --rose: #ffc0cb;
+  --text: #333;
+  --accent: #ff69b4;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(145deg, var(--lemon), var(--rose));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 90%;
+  background: white;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.input-section {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#add-task {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-task:hover {
+  background-color: #e052a0;
+  transform: scale(1.05);
+}
+
+.task-list-section {
+  margin-top: 20px;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#task-list li {
+  display: flex;
+  justify-content: space-between;
+  background: var(--lemon);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+ul#task-list li:hover {
+  background-color: #fdf5e6;
+  transform: scale(1.02);
+}
+
+ul#task-list li span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+ul#task-list li button {
+  background: var(--rose);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+ul#task-list li button:hover {
+  background-color: #ff6f91;
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: var(--text);
+}
